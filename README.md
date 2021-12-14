@@ -1,9 +1,40 @@
 # Parallel Quantum Annealing
 
-```generate_disjoint_clique_embeddings.py``` generates all-to-all connectivity minor embeddings for different quantum annealing hardware connectivities. 
+The Arxiv version of the paper can be found [here](https://arxiv.org/abs/2111.05995)
+
+The classical exact solver we used to compare to D-Wave Advantage 1.1 was the fast maximum clique (fmc) solver. This solver can be downloaded [here](http://cucis.ece.northwestern.edu/projects/MAXCLIQUE/download.html)
+
+```generate_disjoint_clique_embeddings.py``` generates all-to-all connectivity minor embeddings for different quantum annealing hardware connectivities.
+
+```create_random_QUBOs.py``` generates test random graphs and their corresponding Maximum Clique QUBOs.
+
+```fmc_utils.py``` are utility functions for using fmc.
+
+```get_exact_solutions.py``` computes all maximum cliques using brute force classical clique enumeration methods in Networkx.
+
+```run_QA.py``` Calls D-Wave in order to solve the set of test problems using both sequential and parallel QA.
+
+```run_fmc.py``` Solves the test problems exactly using fmc, and records the time this computation used.
+
+hardware_edges/ contains reference connectivites for three different D-Wave QA backends.
 
 ## Authors
 - [Elijah Pelofske](mailto:epelofske@lanl.gov): Information Sciences, Los Alamos National Laboratory
+- [Georg Hahn](mailto:ghahn@hsph.harvard.edu): T.H. Chan School of Public Health, Harvard University
+- [Hristo Djidjev](mailto:djidjev@lanl.gov): Information Sciences, Los Alamos National Laboratory
+
+
+## How to cite Parallel Quantum Annealing?
+```latex
+@misc{pelofske2021parallel,
+      title={Parallel Quantum Annealing}, 
+      author={Elijah Pelofske and Georg Hahn and Hristo N. Djidjev},
+      year={2021},
+      eprint={2111.05995},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+```
 
 ## Copyright Notice:
 © 2021. Triad National Security, LLC. All rights reserved.
