@@ -16,12 +16,12 @@ The classical exact solver we used to compare to D-Wave Advantage 1.1 was the fa
 
 ```run_fmc.py``` Solves the test problems exactly using fmc, and records the time this computation used.
 
-hardware_edges/ contains reference connectivites for three different D-Wave QA backends.
+`hardware_edges/` contains reference connectivites for three different D-Wave QA backends.
 
 ## Authors
 - [Elijah Pelofske](mailto:epelofske@lanl.gov): Information Sciences, Los Alamos National Laboratory
 - [Georg Hahn](mailto:ghahn@hsph.harvard.edu): T.H. Chan School of Public Health, Harvard University
-- [Hristo Djidjev](mailto:djidjev@lanl.gov): Information Sciences, Los Alamos National Laboratory
+- [Hristo Djidjev](mailto:hdjidjev@msn.com): Information Sciences, Los Alamos National Laboratory and Institute of Information and Communication Technologies, Sofia, Bulgaria
 
 
 ## How to cite Parallel Quantum Annealing?
