@@ -16,7 +16,15 @@ The classical exact solver we used to compare to D-Wave Advantage 1.1 was the fa
 
 ```run_fmc.py``` Solves the test problems exactly using fmc, and records the time this computation used.
 
-`hardware_edges/` contains reference connectivites for three different D-Wave QA backends.
+`hardware_edges/` contains reference connectivites for the two D-Wave QA backends (DW_2000Q_LANL and Advantage_system1.1).
+
+### Directories with Figures
+
+The directories `figures_MaxClique_DW_2000Q_LANL_results/` and `figures_MaxClique_Advantage_system1.1_results/` both contain Time-to-Solution and ground state proportion figures and comparisons to the classical fmc solver for Maximum Clique. 
+
+The directory `figures_disjoint_minor_embeddings` contains renderings of the disjoint all-to-all minor embeddings. 
+
+The directory `figures_embedding_sizes` contains figures which provide information on the minor embedding sizes and chain lengths. 
 
 ## Authors
 - [Elijah Pelofske](mailto:epelofske@lanl.gov): Information Sciences, Los Alamos National Laboratory
@@ -26,13 +34,15 @@ The classical exact solver we used to compare to D-Wave Advantage 1.1 was the fa
 
 ## How to cite Parallel Quantum Annealing?
 ```latex
-@misc{pelofske2021parallel,
-      title={Parallel Quantum Annealing}, 
-      author={Elijah Pelofske and Georg Hahn and Hristo N. Djidjev},
-      year={2021},
-      eprint={2111.05995},
-      archivePrefix={arXiv},
-      primaryClass={quant-ph}
+@article{pelofske2022parallel,
+  title={Parallel quantum annealing},
+  author={Pelofske, Elijah and Hahn, Georg and Djidjev, Hristo N},
+  journal={Scientific Reports},
+  volume={12},
+  number={1},
+  pages={1--11},
+  year={2022},
+  publisher={Nature Publishing Group}
 }
 ```
 
