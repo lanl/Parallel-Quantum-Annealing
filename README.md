@@ -42,7 +42,8 @@ The directory `figures_embedding_sizes` contains figures which provide informati
   number={1},
   pages={1--11},
   year={2022},
-  publisher={Nature Publishing Group}
+  publisher={Nature Publishing Group},
+  doi={s41598-022-08394-8}
 }
 ```
 
